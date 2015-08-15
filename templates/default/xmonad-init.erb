@@ -1,0 +1,17 @@
+#!/bin/sh
+setxkbmap -option caps:none
+
+if test -f "/home/<%= node['xmonad']['user'] %>/scripts/monitor_layout.sh"; then
+  /home/<%= node['xmonad']['user'] %>/scripts/monitor_layout.sh
+fi
+
+synclient MaxTapTime=0
+
+xscreensaver &
+nm-applet &
+
+# nautilus --no-desktop -n &
+
+gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
+
+exec /home/<%= node['xmonad']['user'] %>/.cabal/bin/xmonad
