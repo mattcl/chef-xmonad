@@ -1,16 +1,20 @@
 ---
 driver:
   name: vagrant
+  customize:
+    memory: 1024
+    cpuexecutioncap: 70
+  gui: true
 
-provisioner:
+provisione:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-12.04
-  - name: centos-6.5
+  - name: box-cutter/ubuntu1404-desktop
+  - name: box-cutter/ubuntu1604-desktop
 
 suites:
   - name: default
     run_list:
-      - recipe[chef-xmonad::default]
+      - recipe[xmonad::default]
     attributes:
