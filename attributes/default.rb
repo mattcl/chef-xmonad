@@ -13,5 +13,7 @@ default['xmonad']['dependencies'] = {
   'libxpm-dev' => nil,
   'libxrandr-dev' => nil,
   'libxss1' => nil,
+  'libxss1-dbg' => nil,
+  'libxtst6-dbg' => nil,
   'lxappearance' => nil,
 }
