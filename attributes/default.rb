@@ -12,5 +12,6 @@ default['xmonad']['dependencies'] = {
   'libxinerama-dev' => nil,
   'libxpm-dev' => nil,
   'libxrandr-dev' => nil,
-  'lxappearance' => nil
+  'libxss1' => nil,
+  'lxappearance' => nil,
 }
