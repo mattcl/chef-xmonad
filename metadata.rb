@@ -4,7 +4,7 @@ maintainer_email 'mchunlum@gmail.com'
 license          'all_rights'
 description      'Installs/Configures xmonad'
 long_description 'Installs/Configures xmonad'
-version          '0.3.0'
+version          '0.3.1'
 
 depends 'apt'
 depends 'cabal'

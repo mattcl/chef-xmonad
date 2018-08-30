@@ -17,6 +17,5 @@ default['xmonad']['dependencies'] = {
   'libxss1' => nil,
   'libxss1-dbg' => nil,
   'libxtst-dev' => nil,
-  'libxtst6-dbg' => nil,
   'lxappearance' => nil,
 }
